@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circle/Circe-Bold.woff2') format('woff2'),
+    url('../fonts/Circle/Circe-Bold.woff') format('woff'),
+    url('../fonts/Circle/Circe-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circle/Circe-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Circle/Circe-ExtraBold.woff') format('woff'),
+    url('../fonts/Circle/Circe-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circle/Circe-ExtraLight.woff2') format('woff2'),
+    url('../fonts/Circle/Circe-ExtraLight.woff') format('woff'),
+    url('../fonts/Circle/Circe-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circle/Circe-Light.woff2') format('woff2'),
+    url('../fonts/Circle/Circe-Light.woff') format('woff'),
+    url('../fonts/Circle/Circe-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circle/Circe-Regular.woff2') format('woff2'),
+    url('../fonts/Circle/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circle/Circe-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circle/Circe-Thin.woff2') format('woff2'),
+    url('../fonts/Circle/Circe-Thin.woff') format('woff'),
+    url('../fonts/Circle/Circe-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Bold.woff2') format('woff2'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Bold.woff') format('woff'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-BoldItalic.woff2') format('woff2'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-BoldItalic.woff') format('woff'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Italic.woff2') format('woff2'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Italic.woff') format('woff'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Light.woff2') format('woff2'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Light.woff') format('woff'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Comp Pro';
+    src: url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Regular.woff2') format('woff2'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Regular.woff') format('woff'),
+    url('../fonts/PF-DIN-Text-Comp-Pro/PFDinTextCompPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    font-size: 16px;
+    color: #262626;
+    font-family: 'Circe';
+}
+
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+* a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #262626;
+    cursor: pointer;
+}
+* a:hover{
+    text-decoration: none;
+    transition: .3s;
+    color: #327143;
+}
+* a, h1, h2, h3, h4, h5, h6, p, span{
+    font-size: 16px;
+}
+* button, button:focus, a , a:focus{
+    outline: none;
+}
+* h2{
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    color: #1A1A1A;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block;
+}
+
+
+/*----------------------header---------------*/
+
+.header{
+    width: 100%;
+    background-image: url("../images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-top{
+    position: relative;
+}
+.logo-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0 20px;
+}
+.navigation-header{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+}
+.navigation-list{
+    max-width: 625px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.active-link-nav{
+    border-top: 2px solid #ffffff;
+}
+.navigation-list .nav-item{
+    padding: 30px 0;
+}
+.navigation-list .nav-item .nav-link{
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Circe';
+    font-weight: normal;
+    position: relative;
+}
+.nav-bar-top{
+    padding: 0;
+}
+.navigation-list .nav-item .nav-link:before{
+    content: '';
+    left: 5px;
+    position: absolute;
+    background-size: contain;
+}
+.nav-home,
+.nav-product,
+.nav-contact{
+    padding-left: 33px;
+}
+.nav-home:before{
+    background-image: url("../images/home.png");
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 14px;
+    top: 6px;
+}
+.nav-product:before{
+    background-image: url("../images/milk.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 17px;
+    top: 6px;
+}
+.nav-contact:before{
+    background-image: url("../images/contact.png");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 18px;
+    top: 6px;
+}
+.btn-menu{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    display: none;
+}
+.btn-menu i{
+    color: #ffffff;
+}
+
+/*----------------custom select lenguage----------*/
+
+.langs-center {
+    position: absolute;
+    display: inline-block;
+    top: 34%; right: 8%;
+    transform: translate(-50%, -50%);
+}
+.custom{
+    position: absolute;
+    z-index: -1;
+}
+dd span, .selectedValue span {
+    position: relative;
+    top: 2px;
+    display: block;
+    height: 12px;
+    width: 20px;
+    float: left;
+    clear: right;
+}
+dd span.usa, .selectedValue span.usa {
+    background: url("../images/en.png") no-repeat;
+}
+dd span.germany, .selectedValue span.germany {
+    background: url("../images/de.png") no-repeat;
+}
+dd span.france, .selectedValue span.france {
+    background: url("../images/fr.png") no-repeat;
+}
+dd span.rus, .selectedValue span.rus {
+    background: url("../images/ru.png") no-repeat;
+}
+dd span.eston, .selectedValue span.eston {
+    background: url("../images/es.png") no-repeat;
+}
+.custom{
+    max-width: 100px;
+    background: transparent;
+    color: transparent;
+    border: transparent;
+    outline: none;
+}
+.customSelect.select-open .selectList{
+    max-width: 100px;
+    border-radius: 0;
+}
+.selectListInnerWrap dl{
+    max-width: 97px;
+    background-color: transparent;
+}
+.customSelect dd {
+    padding: 9px 10px 9px 15px;
+    color: #3f6c3e;
+}
+.customSelect .selectedValue {
+    padding: 10px 15px;
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    color: #ffffff;
+}
+.selectedValue span{
+    margin-right: 15px;
+}
+dd span{
+    margin-right: 15px;
+}
+.select-open .caret{
+    transform: rotate(180deg);
+}
+
+/*-----------------header banner--------------*/
+.wrapper-header-banner{
+    background-color: rgba(255,255,255,0.1);
+    background-image: url("../images/milk-bottom.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 96%;
+    max-height: calc(100vh + 119px);
+}
+.header-banner{
+    padding-top: 47px;
+}
+.header-title{
+    display: flex;
+    justify-content: center;
+}
+.img-title{
+    max-width: 625px;
+    width: 100%;
+    background-image: url("../images/name.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+     height: 46px;
+    position: relative;
+    padding-left: 168px;
+}
+.milk-img-left,
+.milk-img-right{
+    background: url("../images/milk-img-left.png");
+    width: 141px;
+    height: 40px;
+    margin-right: 25px;
+}
+.milk-img-right{
+    margin-left: 25px;
+    margin-right: 0;
+}
+.info-banner{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Circe';
+    margin-top: 30px;
+}
+.container-img-banner{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    position: relative;
+    bottom: -69px;
+}
+
+.container-img-banner img{
+    max-width: 987px;
+    width: 100%;
+    height: 100%;
+}
