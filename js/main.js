@@ -6,4 +6,10 @@ $(document).ready(function () {
             width: 200
         });
     });
+    $('.vmcarousel-normal').vmcarousel({
+        centered: false,
+        start_item: 0,
+        autoplay: false,
+        infinite: false
+    });
 });
