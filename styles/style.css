@@ -460,6 +460,7 @@ dd span{
     background-size: 100%;
     background-position: center;
     position: relative;
+    z-index: 5;
 }
 .section-content-first:before{
     content: '';
@@ -487,7 +488,18 @@ dd span{
     padding-top: 60px;
     background: url("../images/bg-taste.jpg") no-repeat;
     background-size: cover;
+    position: relative;
 }
+/*.section-content-taste:before{*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*background-image: url("../images/cashe-bg.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: contain;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+/*}*/
 .header-taste{
     margin-top: 60px;
 }
