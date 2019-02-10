@@ -19,8 +19,9 @@ $(document).ready(function () {
         values: sample_data,
         normalizeFunction: 'polynomial',
         onRegionClick: function(event, code) {
-            if (code == "ru") {
-                PopUpShow = '.open-ru'
+            if (code == "ua") {
+                $(".open-modal").addClass("open-pop");
+                $('body').addClass('overflow');
             }
             if (code == "US") {
                 label.text('Bears, vodka, balalaika');
@@ -34,40 +35,30 @@ $(document).ready(function () {
         }
         
     });
-    jQuery('#vmap').vectorMap('set', 'colors', {us: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {ca: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {mx: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {ru: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {fi: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {se: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {no: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {gb: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {ie: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {fr: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {es: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {dk: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {nl: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {de: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {pt: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {be: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {ee: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {lv: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {lt: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {by: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {pl: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {cz: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {at: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {ua: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {it: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {sk: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {hu: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {ro: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {bg: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {si: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {hr: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {gr: '#9cbb3e'});
-    jQuery('#vmap').vectorMap('set', 'colors', {gl: '#eaeaea'});
-    jQuery('#vmap').vectorMap('set', 'colors', {cu: '#eaeaea'});
+    let countriesAbbr = [
+        'us','ca','mx','ru','fi','se','no',
+        'gb','ie','fr','es','dk','nl', 'de',
+        'pt','be','ee','lv','lt','by','pl','cz',
+        'at','ua','it','sk','hu','ro','bg','si',
+        'hr','gr'
+    ];
 
+    countriesAbbr.forEach(function (abbr) {
+        jQuery('#vmap').vectorMap('set', 'colors', {[abbr]: '#9cbb3e'});
+    });
+
+    let countriesAbbr2 =[
+       'gl','cu'
+    ];
+
+    countriesAbbr2.forEach(function (abbr2) {
+        jQuery('#vmap').vectorMap('set', 'colors', {[abbr2]: '#eaeaea'});
+    });
+
+
+    $(".close-btn").click(function () {
+        $(".open-modal").removeClass("open-pop");
+        $('body').removeClass('overflow');
+    });
 
 });
