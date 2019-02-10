@@ -25,7 +25,7 @@
 			self = this;
 
 		$(document).click(function(e) {
-			if($(e.target).parents(".customSelect").size() === 0) {
+			if($(e.target).parents(".customSelect").length === 0) {
 				self.close();
 			}
 		});

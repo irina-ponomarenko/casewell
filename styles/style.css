@@ -424,14 +424,14 @@ dd span{
     font-family: 'PF Din Text Comp Pro Light';
     text-transform: uppercase;
 }
-.title-section{
+.title-section,
+.title-section span{
     font-size: 50px;
     color: #3f6c3e;
     font-family: 'PF Din Text Comp Pro';
     font-weight: bold;
     position: relative;
     padding: 0 164px;
-    text-transform: uppercase;
 }
 .title-section:before{
     content: '';
@@ -487,19 +487,21 @@ dd span{
 .section-content-taste{
     padding-top: 60px;
     background: url("../images/bg-taste.jpg") no-repeat;
-    background-size: cover;
     position: relative;
+    background-size: cover;
+    padding-bottom: 35px;
 }
-/*.section-content-taste:before{*/
-    /*content: '';*/
-    /*position: absolute;*/
-    /*background-image: url("../images/cashe-bg.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: contain;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-/*}*/
+.section-content-taste:before{
+    content: '';
+    position: absolute;
+    background-image: url("../images/cashe-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 237px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .header-taste{
     margin-top: 60px;
 }
@@ -534,3 +536,13 @@ dd span{
     margin-top: 30px;
     margin-bottom: 50px;
 }
+.map-container{
+    margin-top: 20px;
+}
+/*.open-ru{*/
+    /*position: absolute;*/
+    /*top:50%;*/
+    /*background: red;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+/*}*/

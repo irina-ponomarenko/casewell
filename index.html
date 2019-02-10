@@ -13,7 +13,8 @@
     <link href="fonts/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
     <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="styles/customSelectBox.css" media="all"/>
-    <link rel="stylesheet" href="styles/jquery.vm-carousel.css" media="all"/>
+    <link rel="stylesheet" href="styles/jcarousel.responsive.css" media="all"/>
+    <link rel="stylesheet" href="styles/jqvmap.css" media="all"/>
     <link rel="stylesheet" href="styles/style.css" media="all"/>
     <link rel="stylesheet" href="styles/media.css" media="all"/>
 </head>
@@ -78,8 +79,8 @@
 <section class="section-content section-content-first">
     <div class="container">
         <header class="header-section">
-            <h3 class="top-title-section">Хотите узнать</h3>
-            <h2 class="title-section">Почему кешью ?</h2>
+            <h3 class="top-title-section">ХОТИТЕ УЗНАТЬ</h3>
+            <h2 class="title-section">ПОЧЕМУ КЕШЬЮ?</h2>
         </header>
         <div class="content-section">
             <p>Кешью очень богат полезными веществами он содержит много белка и жирных кислот. Такие компоненты как магний, фосфор, калий, железо, витамины и клетчатка необходимы нашему организму для полноценного питания , также помогают в профилактике многих заболеваний. Кешью обладает антисептическим, антибактериальным и тонизирующим свойствами, является природным афродизиаком.</p>
@@ -89,8 +90,8 @@
 <section class="section-content section-content-taste">
    <div class="container">
        <header class="header-section header-taste">
-           <h3 class="top-title-section">Больше ореха</h3>
-           <h2 class="title-section">наша продукция</h2>
+           <h3 class="top-title-section">БОЛЬШЕ ОРЕХА</h3>
+           <h2 class="title-section">НАША ПРОДУКЦИЯ</h2>
        </header>
        <div class="container-about-taste">
            <ul class="about-taste-list">
@@ -124,26 +125,46 @@
                </li>
            </ul>
        </div>
-       <div class="wrapper-slider">
-           <ul class="vmcarousel-normal">
-               <li><img src="images/img-1.png" alt="" width="216"></li>
-               <li><img src="images/img-2.png" alt="" width="216"></li>
-               <li><img src="images/img-3.png" alt="" width="216"></li>
-               <li><img src="images/img-1.png" alt="" width="216"></li>
-               <li><img src="images/img-2.png" alt="" width="216"></li>
-               <li><img src="images/img-3.png" alt="" width="216"></li>
-           </ul>
+
+       <div class="jcarousel-wrapper">
+           <div class="jcarousel">
+               <ul>
+                   <li><img src="images/img-1.png" alt="Image 1"></li>
+                   <li><img src="images/img-2.png" alt="Image 1"></li>
+                   <li><img src="images/img-3.png" alt="Image 1"></li>
+                   <li><img src="images/img-1.png" alt="Image 1"></li>
+                   <li><img src="images/img-2.png" alt="Image 1"></li>
+                   <li><img src="images/img-3.png" alt="Image 1"></li>
+               </ul>
+           </div>
+
+           <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+           <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+           <p class="jcarousel-pagination"></p>
        </div>
    </div>
+</section>
+<section class="section-content section-map">
+    <div class="container">
+        <header class="header-section header-taste">
+            <h3 class="top-title-section">Где приобрести</h3>
+            <h2 class="title-section">КАРТА ПРОДАЖ CasheWell</h2>
+        </header>
+    </div>
+    <div id="vmap" class="map-container" style="width: 100%; height: 400px;"></div>
+    <div class="open-ru"></div>
 </section>
 
 <script src="js/jquery-3.2.1.js"></script>
 <script src="bootstrap-4.2.1-dist/js/bootstrap.bundle.min.js"></script>
 <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
 <script src="js/SelectBox.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-<script src="js/jquery.vm-carousel.js"></script>
+<script src="js/jquery.jcarousel.js"></script>
+<script src="js/jcarousel.responsive.js"></script>
+<script type="text/javascript" src="js/jquery.vmap.js"></script>
+<script type="text/javascript" src="js//jquery.vmap.world.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.vmap.sampledata.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
