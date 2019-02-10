@@ -18,15 +18,21 @@ $(document).ready(function () {
         scaleColors: ['#eaeaea'],
         values: sample_data,
         normalizeFunction: 'polynomial',
-        onRegionClick: function(element, code, region)
-        {
-            var message = 'You clicked "'
-                + region
-                + '" which has the code: '
-                + code.toUpperCase();
-
-            alert(message);
+        onRegionClick: function(event, code) {
+            if (code == "ru") {
+                PopUpShow = '.open-ru'
+            }
+            if (code == "US") {
+                label.text('Bears, vodka, balalaika');
+            }
+            if (code == "DE") {
+                window.location = '/url4'
+            }
+            if (code == "IE") {
+                window.location = '/url5'
+            }
         }
+        
     });
     jQuery('#vmap').vectorMap('set', 'colors', {us: '#9cbb3e'});
     jQuery('#vmap').vectorMap('set', 'colors', {ca: '#9cbb3e'});

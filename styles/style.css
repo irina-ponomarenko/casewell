@@ -539,10 +539,12 @@ dd span{
 .map-container{
     margin-top: 20px;
 }
-/*.open-ru{*/
-    /*position: absolute;*/
-    /*top:50%;*/
-    /*background: red;*/
-    /*width: 100px;*/
-    /*height: 100px;*/
-/*}*/
+.open-ru{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    background: red;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
