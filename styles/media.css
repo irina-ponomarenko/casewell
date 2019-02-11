@@ -5,15 +5,9 @@
     .img-title{
         max-width: 525px;
     }
-    .social-list-fixed {
-        right: 30px;
-        top: 30%;
-    }
     .btn-up{
-        right: 35px;
         width: 53px;
         height: 53px;
-        opacity: 0.7;
     }
 }
 @media (max-width: 922px) and (min-width:  360px){
@@ -70,12 +64,6 @@
         right: 30px;
         top: 30%;
     }
-    .btn-up{
-        right: 35px;
-        width: 53px;
-        height: 53px;
-        opacity: 0.7;
-    }
 }
 @media (max-width: 768px) and (min-width:  360px){
     .langs-center{
@@ -108,7 +96,7 @@
         top: 30%;
     }
     .btn-up{
-        right: 25px;
+        right: 20px;
         width: 53px;
         height: 53px;
         opacity: 0.7;
@@ -178,7 +166,7 @@
         top: 30%;
     }
     .btn-up{
-        right: 15px;
+        right: 10px;
         width: 53px;
         height: 53px;
         opacity: 0.7;

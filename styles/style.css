@@ -864,7 +864,7 @@ dd span{
     justify-content: center;
     position: fixed;
     right: 30px;
-    bottom: 20%;
+    bottom: 80px;
     z-index: 101;
 }
 .arrow-up{
@@ -873,4 +873,12 @@ dd span{
     height: 17px;
     background-size: contain;
     display: block;
+}
+#backtotop{
+    opacity: .2;
+    visibility: hidden;
+}
+#backtotop.visible {
+    visibility: visible;
+    opacity: 0.7;
 }
