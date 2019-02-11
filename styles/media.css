@@ -29,7 +29,12 @@
     .section-content-taste{
         background-size: cover;
     }
-    .top-title-section{
+    .taste-product{
+        background-size: 100% 100px;
+        background-position: 0 100%;
+    }
+    .top-title-section,
+    .title-section-about{
         font-size: 23px;
     }
     .title-section, .title-section span{
@@ -75,6 +80,10 @@
     .section-content-taste{
         background-size: cover;
     }
+    .taste-product{
+        background-size: 100% 100px;
+        background-position: 0 100%;
+    }
     .title-section, .title-section span {
         font-size: 30px;
         white-space: nowrap;
@@ -116,7 +125,8 @@
     .section-content-taste{
         background-size: cover;
     }
-    .top-title-section {
+    .top-title-section,
+    .title-section-about{
         font-size: 18px;
     }
     .title-section, .title-section span{
@@ -134,7 +144,8 @@
     .milk-img-right {
         display: none;
     }
-    .top-title-section {
+    .top-title-section,
+    .title-section-about{
         font-size: 20px;
     }
     .title-section, .title-section span {
@@ -160,6 +171,10 @@
     }
     .section-content-taste{
         background-size: cover;
+    }
+    .taste-product{
+        background-size: 100% 100px;
+        background-position: 0 100%;
     }
     .social-list-fixed {
         right: 10px;
@@ -199,6 +214,10 @@
     .section-content-taste{
         background-size: cover;
     }
+    .taste-product{
+        background-size: 100% 100px;
+        background-position: 0 100%;
+    }
     .nav-footer .navigation-list {
         flex-direction: row;
     }
@@ -219,7 +238,8 @@
     .title-section, .title-section span {
         font-size: 30px;
     }
-    .top-title-section {
+    .top-title-section,
+    .title-section-about{
         font-size: 18px;
     }
     .nav-footer .navigation-list {
