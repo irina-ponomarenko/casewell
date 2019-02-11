@@ -1,9 +1,22 @@
-@media (max-width: 1210px) and (min-width:  923px){
+@media (max-width: 1210px) and (min-width:  360px){
     .container-img-banner{
         bottom: -66px;
     }
+    .img-title{
+        max-width: 525px;
+    }
+    .social-list-fixed {
+        right: 30px;
+        top: 30%;
+    }
+    .btn-up{
+        right: 35px;
+        width: 53px;
+        height: 53px;
+        opacity: 0.7;
+    }
 }
-@media (max-width: 922px) and (min-width:  769px){
+@media (max-width: 922px) and (min-width:  360px){
     .container-img-banner{
         bottom: -66px;
     }
@@ -11,16 +24,60 @@
         max-width: 787px;
         width: 100%;
     }
+    .img-title{
+        max-width: 425px;
+    }
 }
-@media (max-width: 992px) and (min-width:  769px){
+@media (max-width: 992px) and (min-width:  360px){
     .langs-center{
         right: 10%;
     }
     .section-content-taste{
         background-size: cover;
     }
+    .top-title-section{
+        font-size: 23px;
+    }
+    .title-section, .title-section span{
+        font-size: 40px;
+    }
+    .title-section::before,
+    .title-section::after{
+        width: 120px;
+        height: 30px;
+    }
 }
-@media (max-width: 768px) and (min-width:  577px){
+@media (max-width: 992px) and (min-width:  360px){
+    .name-taste-info, .composition{
+        font-size: 18px;
+    }
+    .about-taste-list{
+        flex-wrap: wrap;
+
+    }
+    .container-logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-top-footer{
+        flex-direction: column;
+    }
+    .item-taste{
+        margin-bottom: 20px;
+    }
+    .social-list-fixed {
+        right: 30px;
+        top: 30%;
+    }
+    .btn-up{
+        right: 35px;
+        width: 53px;
+        height: 53px;
+        opacity: 0.7;
+    }
+}
+@media (max-width: 768px) and (min-width:  360px){
     .langs-center{
         right: 14%;
     }
@@ -30,8 +87,35 @@
     .section-content-taste{
         background-size: cover;
     }
+    .title-section, .title-section span {
+        font-size: 30px;
+        white-space: nowrap;
+    }
 }
-@media (max-width: 576px) and (min-width:  487px){
+@media (max-width: 636px) and (min-width:  360px){
+    .top-footer::before {
+        width: 180px;
+        height: 150px;
+        top: -90px;
+    }
+    .section-content-first::before{
+        width: 180px;
+        height: 150px;
+        bottom: -76px;
+    }
+    .social-list-fixed {
+        right: 20px;
+        top: 30%;
+    }
+    .btn-up{
+        right: 25px;
+        width: 53px;
+        height: 53px;
+        opacity: 0.7;
+    }
+
+}
+@media (max-width: 576px) and (min-width:  360px){
     .langs-center{
         right: 19%;
     }
@@ -44,8 +128,39 @@
     .section-content-taste{
         background-size: cover;
     }
+    .top-title-section {
+        font-size: 18px;
+    }
+    .title-section, .title-section span{
+        padding: 0 104px;
+    }
+    .title-section::before, .title-section::after {
+        width: 100px;
+        height: 30px;
+    }
 }
-@media (max-width: 486px) and (min-width:  416px){
+@media (max-width: 510px) and (min-width:  360px){
+    .title-section::before,
+    .title-section::after,
+    .milk-img-left,
+    .milk-img-right {
+        display: none;
+    }
+    .top-title-section {
+        font-size: 20px;
+    }
+    .title-section, .title-section span {
+        font-size: 40px;
+    }
+    .title-section, .title-section span {
+        padding: 0;
+    }
+    .img-title{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 486px) and (min-width:  360px){
     .langs-center{
         right: 24%;
     }
@@ -57,6 +172,16 @@
     }
     .section-content-taste{
         background-size: cover;
+    }
+    .social-list-fixed {
+        right: 10px;
+        top: 30%;
+    }
+    .btn-up{
+        right: 15px;
+        width: 53px;
+        height: 53px;
+        opacity: 0.7;
     }
 }
 @media only screen and (max-width: 435px) and (min-width: 360px) {
@@ -85,6 +210,32 @@
     }
     .section-content-taste{
         background-size: cover;
+    }
+    .nav-footer .navigation-list {
+        flex-direction: row;
+    }
+    .header-section {
+        margin-top: 50px;
+    }
+    .section-content-first {
+        padding: 50px 0 120px;
+    }
+    .header-taste {
+        margin-top: 40px;
+    }
+    .map-container{
+        height: 400px !important;
+    }
+}
+@media only screen and (max-width: 403px) and (min-width: 360px) {
+    .title-section, .title-section span {
+        font-size: 30px;
+    }
+    .top-title-section {
+        font-size: 18px;
+    }
+    .nav-footer .navigation-list {
+        flex-direction: column;
     }
 }
 @media only screen and (max-width: 376px) and (min-width: 360px) {
