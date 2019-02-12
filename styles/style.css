@@ -966,8 +966,8 @@ dd span{
     align-items: center;
     justify-content: center;
 }
-.container-info-product:last-child p{
-    text-align: center;
+.last-block{
+    text-align: center !important;
 }
 .container-item-img{
     max-width: 208px;

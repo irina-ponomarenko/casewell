@@ -33,11 +33,11 @@
         background-size: 100% 100px;
         background-position: 0 100%;
     }
-    .top-title-section,
-    .title-section-about{
+    .top-title-section{
         font-size: 23px;
     }
-    .title-section, .title-section span{
+    .title-section, .title-section span,
+    .title-section-about{
         font-size: 40px;
     }
     .title-section::before,
@@ -84,7 +84,8 @@
         background-size: 100% 100px;
         background-position: 0 100%;
     }
-    .title-section, .title-section span {
+    .title-section, .title-section span,
+    .title-section-about{
         font-size: 30px;
         white-space: nowrap;
     }
@@ -125,8 +126,7 @@
     .section-content-taste{
         background-size: cover;
     }
-    .top-title-section,
-    .title-section-about{
+    .top-title-section{
         font-size: 18px;
     }
     .title-section, .title-section span{
@@ -136,6 +136,20 @@
         width: 100px;
         height: 30px;
     }
+    .item-product{
+        flex-direction: column !important;
+    }
+    .container-item-img,
+    .item-product:nth-child(2n) .container-item-img{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .container-info-product p{
+        text-align: center;
+    }
+    .title-section-about{
+        padding: 0;
+    }
 }
 @media (max-width: 510px) and (min-width:  360px){
     .title-section::before,
@@ -144,11 +158,11 @@
     .milk-img-right {
         display: none;
     }
-    .top-title-section,
-    .title-section-about{
+    .top-title-section{
         font-size: 20px;
     }
-    .title-section, .title-section span {
+    .title-section, .title-section span,
+    .title-section-about{
         font-size: 40px;
     }
     .title-section, .title-section span {
@@ -235,11 +249,11 @@
     }
 }
 @media only screen and (max-width: 403px) and (min-width: 360px) {
-    .title-section, .title-section span {
+    .title-section, .title-section span,
+    .title-section-about{
         font-size: 30px;
     }
-    .top-title-section,
-    .title-section-about{
+    .top-title-section{
         font-size: 18px;
     }
     .nav-footer .navigation-list {
