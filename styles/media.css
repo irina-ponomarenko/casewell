@@ -10,6 +10,14 @@
         height: 53px;
     }
 }
+@media (max-width: 990px) and (min-width:  360px){
+    .item-contact:nth-child(4){
+        margin-bottom: 30px;
+    }
+    .item-contact:nth-child(3) {
+        margin-right: 30px;
+    }
+}
 @media (max-width: 922px) and (min-width:  360px){
     .container-img-banner{
         bottom: -66px;
@@ -89,6 +97,13 @@
         font-size: 30px;
         white-space: nowrap;
     }
+    .item-contact{
+        width: 100%;
+        margin-right: 0;
+    }
+    .item-contact:nth-child(3) {
+        margin-right: 0;
+    }
 }
 @media (max-width: 636px) and (min-width:  360px){
     .top-footer::before {
@@ -110,6 +125,9 @@
         width: 53px;
         height: 53px;
         opacity: 0.7;
+    }
+    .header-section {
+        margin-top: 50px;
     }
 
 }
@@ -240,6 +258,9 @@
     }
     .section-content-first {
         padding: 50px 0 120px;
+    }
+    .about-contact{
+        padding-top: 0;
     }
     .header-taste {
         margin-top: 40px;
