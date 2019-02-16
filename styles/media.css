@@ -222,11 +222,15 @@
 @media only screen and (max-width: 435px) and (min-width: 360px) {
     .btn-menu {
         display: block;
-        margin-top: 10px;
+        margin: 10px 0;
     }
     .navigation-list{
         flex-direction: column;
         margin-top: 10px;
+        display: none;
+    }
+    .open-nav{
+        max-height: 100%;
     }
     .navigation-header{
         flex-direction: column;
