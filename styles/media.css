@@ -60,7 +60,7 @@
     }
     .about-taste-list{
         flex-wrap: wrap;
-
+        justify-content: center;
     }
     .container-logo{
         display: flex;
@@ -76,6 +76,9 @@
     .social-list-fixed {
         right: 30px;
         top: 30%;
+    }
+    .info-banner{
+        font-size: 18px;
     }
 }
 @media (max-width: 768px) and (min-width:  360px){
@@ -176,6 +179,9 @@
     .title-section-about{
         padding: 0;
     }
+    .info-banner{
+        margin-top: 10px;
+    }
 }
 @media (max-width: 510px) and (min-width:  360px){
     .title-section::before,
@@ -232,10 +238,38 @@
         display: block;
         margin: 10px 0;
     }
+    .nav-footer .navigation-list .nav-item {
+        margin: 0 20px;
+        padding: 35px 0;
+    }
+    .navigation-list .nav-item .nav-link{
+        font-size: 0;
+    }
     .navigation-list{
-        flex-direction: column;
-        margin-top: 10px;
-        display: none;
+        margin-bottom: 20px;
+    }
+    .navigation-list .nav-item .nav-link:before {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    .nav-home:before,
+    .nav-footer .navigation-list .nav-item .nav-home:before{
+        width: 26px;
+        height: 24px;
+    }
+    .nav-product:before,
+    .nav-footer .navigation-list .nav-item.active-link-nav .nav-product:before{
+        width: 21px;
+        height: 27px;
+    }
+    .nav-contact:before,
+    .nav-footer .navigation-list .nav-item .nav-contact:before{
+        width: 23px;
+        height: 28px;
+    }
+    .nav-footer .navigation-list{
+        display: flex;
     }
     .open-nav{
         max-height: 100%;
@@ -288,9 +322,6 @@
     }
     .top-title-section{
         font-size: 18px;
-    }
-    .nav-footer .navigation-list {
-        flex-direction: column;
     }
 }
 @media only screen and (max-width: 376px) and (min-width: 360px) {

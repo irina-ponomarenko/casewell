@@ -62,11 +62,6 @@ $(document).ready(function () {
         $('body').removeClass('overflow');
     });
 
-
-    $(".btn-menu").click(function () {
-        $(".navigation-list").toggle("slow");
-    });
-
 });
 
 jQuery("#backtotop").click(function () {
