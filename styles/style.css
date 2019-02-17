@@ -992,7 +992,7 @@ dd span{
 .item-contact:nth-child(1),
 .item-contact:nth-child(2),
 .item-contact:nth-child(3){
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .item-contact p{
@@ -1011,9 +1011,6 @@ dd span{
 }
 .content-section-contact{
     justify-content: center;
-}
-.content-section-contact:first-child{
-    margin-top: 10px;
 }
 .about-contact{
     padding-top: 0;
