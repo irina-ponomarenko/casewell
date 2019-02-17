@@ -831,7 +831,7 @@ dd span{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 .social-list-fixed{
     position: fixed;
@@ -982,10 +982,10 @@ dd span{
     background-color: #eef1e3;
     padding: 22px;
     max-width: 360px;
+    width: 100%;
     text-align: left;
     margin-right: 30px;
 }
-.item-contact:nth-child(3),
 .item-contact:last-child{
     margin-right: 0;
 }
@@ -1009,11 +1009,10 @@ dd span{
     font-weight: bold;
     font-size: 25px;
 }
-.list-contact{
-    display: flex;
-    align-items: center;
+.content-section-contact{
     justify-content: center;
-    flex-wrap: wrap;
+}
+.content-section-contact:first-child{
     margin-top: 10px;
 }
 .about-contact{

@@ -101,6 +101,14 @@
         width: 100%;
         margin-right: 0;
     }
+    .item-contact {
+        margin-right: 0;
+    }
+    .content-section-contact{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .item-contact:nth-child(3) {
         margin-right: 0;
     }
